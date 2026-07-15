@@ -1,0 +1,18 @@
+vendor:
+  id: xilinx
+  name: Xilinx
+  display_name: Xilinx
+series:
+  id: zynq_us_plus
+  name: zynq_us_plus
+  family: ULTRASCALE_PLUS
+  data_dirs:
+  - pinout_file/xilinx/zynq_us_plus/zupall/zupall
+  column_map:
+    pin: Pin
+    pin_name: Pin Name
+    bank: Bank
+    io_type: I/O Type
+    byte_group: Memory Byte Group
+    slr: Super Logic Region
+models: []

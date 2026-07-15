@@ -1,0 +1,19 @@
+vendor:
+  id: xilinx
+  name: Xilinx
+  display_name: Xilinx
+series:
+  id: ultrascale_plus
+  name: ultrascale_plus
+  family: ULTRASCALE_PLUS
+  data_dirs:
+  - pinout_file/xilinx/ultrascale_plus/usaall
+  column_map:
+    pin: Pin
+    pin_name: Pin Name
+    bank: Bank
+    io_type: I/O Type
+    byte_group: Memory Byte Group
+    slr: Super Logic Region
+    no_connect: No-Connect
+models: []

@@ -1,0 +1,18 @@
+vendor:
+  id: example
+  name: ExampleVendor
+  display_name: Example Vendor
+
+series:
+  id: example_series
+  name: ExampleSeries
+  family: GENERIC
+  data_dirs:
+    - pinout_file/example/example_series
+  column_map:
+    pin: Pin
+    pin_name: Pin Name
+    bank: Bank
+    io_type: Type
+
+models: []

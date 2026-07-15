@@ -1,0 +1,82 @@
+# manifest.yaml —— 型号扩展接口统一清单模板
+# 把这个文件放到 library/<vendor_id>/<series_id>/manifest.yaml
+
+# ============================================================
+# vendor 段：厂商信息
+# ============================================================
+vendor:
+  # 厂商唯一标识（只含小写字母/数字/下划线/连字符）
+  id: <vendor_id>
+
+  # GUI 下拉框显示名
+  name: <Vendor Name>
+
+  # 更友好的完整名称（可选）
+  display_name: <Full Vendor Name>
+
+  # 别名列表（可选）
+  aliases:
+    - <alias1>
+    - <alias2>
+
+# ============================================================
+# series 段：系列信息
+# ============================================================
+series:
+  # 系列唯一标识（厂商内唯一）
+  id: <series_id>
+
+  # GUI 下拉框显示名
+  name: <Series Name>
+
+  # 家族：非 Xilinx 新厂商统一填 GENERIC；
+  #       Xilinx 可填 SERIES_7 / ULTRASCALE / ULTRASCALE_PLUS
+  family: GENERIC
+
+  # 要扫描的数据目录列表，路径相对项目根目录（exe 所在目录）
+  # 示例：
+  #   - .                       # 扫描项目根目录本身
+  #   - a7all                   # 指向现有 Xilinx 数据目录
+  data_dirs:
+    - .
+
+  # 内部 canonical 字段 → CSV 实际列名的映射
+  # key（左侧）必须是以下之一：pin, pin_name, bank, io_type, byte_group, slr, vccaux_group, no_connect
+  # value（右侧）替换为 CSV 里的实际列名
+  column_map:
+    pin: <Pin / Location>
+    pin_name: <Pin Name>
+    bank: <Bank>
+    io_type: <I/O Type>
+    # 以下可选
+    byte_group: <Memory Byte Group>
+    slr: <Super Logic Region>
+    vccaux_group: <VCCAUX Group>
+    no_connect: <No-Connect>
+
+  # 引脚分类规则。
+  # 可以是相对路径（推荐），也可以是内联 YAML 字典。
+  classification: classification_rules.yaml
+
+  # 系列级封装规格。
+  # 可以是相对路径，也可以是内联 YAML 字典。
+  # 不填则只使用顶层 data/pkg_db.json。
+  packages: packages.yaml
+
+# ============================================================
+# models 段：型号列表
+# 后续新增同一厂商/同一系列的型号，只需在这里追加一条。
+# ============================================================
+models:
+  - device: <device_name>
+    package: <package_code>
+    full_name: <device_name><package_code>
+    # pinout 路径相对本 manifest.yaml
+    pinout: <device_package>/pinout.csv
+    # package_spec 可选；缺失时按 package code 查注册表
+    package_spec: <device_package>/package.json
+
+  - device: <another_device>
+    package: <another_package>
+    full_name: <another_device><another_package>
+    pinout: <another_dir>/pinout.csv

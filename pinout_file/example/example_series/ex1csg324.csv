@@ -1,0 +1,4 @@
+Pin,Pin Name,Bank,Type
+A1,VCC,0,POWER
+B1,GND,0,GROUND
+A2,IO_0,1,IO

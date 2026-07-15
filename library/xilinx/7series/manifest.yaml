@@ -1,0 +1,22 @@
+vendor:
+  id: xilinx
+  name: Xilinx
+  display_name: Xilinx
+series:
+  id: 7series
+  name: 7series
+  family: SERIES_7
+  data_dirs:
+  - pinout_file/xilinx/7series/a7all
+  - pinout_file/xilinx/7series/k7all
+  - pinout_file/xilinx/7series/s7all/s7all
+  - pinout_file/xilinx/7series/v7all
+  column_map:
+    pin: Pin
+    pin_name: Pin Name
+    bank: Bank
+    io_type: I/O Type
+    byte_group: Memory Byte Group
+    vccaux_group: VCCAUX Group
+    no_connect: No-Connect
+models: []

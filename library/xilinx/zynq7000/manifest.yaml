@@ -1,0 +1,20 @@
+vendor:
+  id: xilinx
+  name: Xilinx
+  display_name: Xilinx
+series:
+  id: zynq7000
+  name: zynq7000
+  family: SERIES_7
+  data_dirs:
+  - pinout_file/xilinx/zynq7000/z7all/7zSeriesALL
+  column_map:
+    pin: Pin
+    pin_name: Pin Name
+    bank: Bank
+    io_type: I/O Type
+    byte_group: Memory Byte Group
+    slr: Super Logic Region
+    vccaux_group: VCCAUX Group
+    no_connect: No-Connect
+models: []

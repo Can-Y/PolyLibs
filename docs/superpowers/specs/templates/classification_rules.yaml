@@ -1,0 +1,45 @@
+# classification_rules.yaml —— 引脚分类规则模板
+# 把这个文件放到 library/<vendor_id>/<series_id>/classification_rules.yaml
+# 规则按 power → ground → nc → config → mgt → analog 顺序匹配，最先命中者决定 pin_type。
+# 未命中任何规则的引脚默认归类为 IO。
+
+power_patterns:
+  # 示例：匹配 VCC、VCCINT、VCCIO、VCC1V8 等
+  - pattern: '^VCC(?:INT|IO|AUX|PLL|_?\d+(?:\.\d+)?V?)?$'
+    rail: VCCINT
+
+  # 示例：匹配 VCCO_1、VCCO_12，rail 名用捕获组填充
+  - pattern: '^VCCO_(\d+)$'
+    rail: 'VCCO_{0}'
+
+  # 通用：匹配 VCCxxx，rail 名取捕获组
+  - pattern: '^VCC([A-Z0-9_]+)$'
+    rail: 'VCC{0}'
+
+ground_patterns:
+  - pattern: '^GND$'
+  - pattern: '^GNDADC_?\d*$'
+  - pattern: '^GND_[A-Z0-9]+$'
+
+config_patterns:
+  - pattern: '^(CCLK|TCK|TMS|TDI|TDO|DONE|PROGRAM|INIT|JTAG|CFGBVS|PUDC_B|EMCCLK|CSI_B|RDWR_FCS_B|FCS_B)_?\d*$'
+
+mgt_patterns:
+  - pattern: '^(MGT|GTH|GTX|GTP|GTY|MGTH|SerDes|Transceiver)'
+
+analog_patterns:
+  - pattern: '^(VN|VP|VREF[NPR]|DXP|DXN|ADC|VCCADC|GNDADC)'
+
+nc_patterns:
+  - pattern: '^NC$'
+  - pattern: '^RSVD'
+  - pattern: '^RESERVED'
+  - pattern: '^Unused$'
+
+# 方向规则：仅对 IO 生效；电源/地/NC 等方向固定。
+direction_rules:
+  - when: { pin_type: IO, name_pattern: '.*_IN$' }
+    direction: INPUT
+  - when: { pin_type: IO, name_pattern: '.*_OUT$' }
+    direction: OUTPUT
+  - default: BIDIRECTIONAL

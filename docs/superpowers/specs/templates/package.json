@@ -1,0 +1,8 @@
+{
+  "pitch_mm": 1.0,
+  "body_size_x": 23.0,
+  "body_size_y": 23.0,
+  "pad_diameter_mm": 0.45,
+  "mask_opening_mm": 0.5,
+  "paste_diameter_mm": 0.4
+}

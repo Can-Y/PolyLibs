@@ -1,0 +1,34 @@
+# Virtual environments
+.venv/
+*/.venv/
+
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Build outputs
+build/
+dist/
+*.spec
+!PolyLibs.spec
+
+# Generated outputs
+output/*
+!output/.gitkeep
+
+# Kimi Code session config
+.superpowers/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

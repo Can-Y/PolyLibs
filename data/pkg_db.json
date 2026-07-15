@@ -1,0 +1,2899 @@
+{
+  "cgfbvb900": {
+    "body_size_x": 25.0,
+    "body_size_y": 25.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "cgffvb1156": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "cgffvc1156": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "cgffvc900": {
+    "body_size_x": 31.5,
+    "body_size_y": 31.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "cgffvf1517": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "cgsbva484": {
+    "body_size_x": 18.6,
+    "body_size_y": 18.6,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "cgsfva625": {
+    "body_size_x": 26.5,
+    "body_size_y": 26.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "cgsfvc784": {
+    "body_size_x": 29.5,
+    "body_size_y": 29.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "cgsfve784": {
+    "body_size_x": 29.5,
+    "body_size_y": 29.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "cgubva494": {
+    "body_size_x": 24.5,
+    "body_size_y": 24.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "cgubva530": {
+    "body_size_x": 25.5,
+    "body_size_y": 25.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "cl225": {
+    "body_size_x": 13.0,
+    "body_size_y": 13.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "cl400": {
+    "body_size_x": 17.0,
+    "body_size_y": 17.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "cl484": {
+    "body_size_x": 19.0,
+    "body_size_y": 19.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "cl485": {
+    "body_size_x": 19.0,
+    "body_size_y": 19.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "clg225": {
+    "body_size_x": 13.0,
+    "body_size_y": 13.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "clg400": {
+    "body_size_x": 17.0,
+    "body_size_y": 17.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "clg484": {
+    "body_size_x": 19.0,
+    "body_size_y": 19.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "clg485": {
+    "body_size_x": 19.0,
+    "body_size_y": 19.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "cna1509": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "cp236": {
+    "body_size_x": 10.0,
+    "body_size_y": 10.0,
+    "mask_opening_mm": 0.3,
+    "pad_diameter_mm": 0.25,
+    "paste_diameter_mm": 0.2,
+    "pitch_mm": 0.5
+  },
+  "cpg236": {
+    "body_size_x": 10.0,
+    "body_size_y": 10.0,
+    "mask_opening_mm": 0.3,
+    "pad_diameter_mm": 0.25,
+    "paste_diameter_mm": 0.2,
+    "pitch_mm": 0.5
+  },
+  "cpg238": {
+    "body_size_x": 10.0,
+    "body_size_y": 10.0,
+    "mask_opening_mm": 0.3,
+    "pad_diameter_mm": 0.25,
+    "paste_diameter_mm": 0.2,
+    "pitch_mm": 0.5
+  },
+  "cpga196": {
+    "body_size_x": 8.0,
+    "body_size_y": 8.0,
+    "mask_opening_mm": 0.3,
+    "pad_diameter_mm": 0.25,
+    "paste_diameter_mm": 0.2,
+    "pitch_mm": 0.5
+  },
+  "cs324": {
+    "body_size_x": 15.0,
+    "body_size_y": 15.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "cs325": {
+    "body_size_x": 15.0,
+    "body_size_y": 15.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "csa225": {
+    "body_size_x": 13.0,
+    "body_size_y": 13.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "csg324": {
+    "body_size_x": 15.0,
+    "body_size_y": 15.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "csg325": {
+    "body_size_x": 15.0,
+    "body_size_y": 15.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "csga225": {
+    "body_size_x": 13.0,
+    "body_size_y": 13.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "csga324": {
+    "body_size_x": 15.0,
+    "body_size_y": 15.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "fb484": {
+    "body_size_x": 23.0,
+    "body_size_y": 23.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fb676": {
+    "body_size_x": 27.0,
+    "body_size_y": 27.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fb900": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fbg484": {
+    "body_size_x": 23.0,
+    "body_size_y": 23.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fbg676": {
+    "body_size_x": 27.0,
+    "body_size_y": 27.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fbg900": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fbv484": {
+    "body_size_x": 23.0,
+    "body_size_y": 23.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fbv676": {
+    "body_size_x": 27.0,
+    "body_size_y": 27.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fbv900": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fbva676": {
+    "body_size_x": 27.0,
+    "body_size_y": 27.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fbva900": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fbvb900": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fcva289": {
+    "body_size_x": 9.0,
+    "body_size_y": 9.0,
+    "mask_opening_mm": 0.3,
+    "pad_diameter_mm": 0.25,
+    "paste_diameter_mm": 0.2,
+    "pitch_mm": 0.5
+  },
+  "ff1156": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ff1157": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ff1158": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ff1761": {
+    "body_size_x": 42.5,
+    "body_size_y": 42.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ff1926": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ff1927": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ff1928": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ff1930": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ff676": {
+    "body_size_x": 27.0,
+    "body_size_y": 27.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ff900": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ff901": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffg1156": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffg1157": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffg1158": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffg1761": {
+    "body_size_x": 42.5,
+    "body_size_y": 42.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffg1926": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffg1927": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffg1928": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffg1930": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffg676": {
+    "body_size_x": 27.0,
+    "body_size_y": 27.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffg900": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffg901": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffra1156": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffrb1156": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffrb1517": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffrb676": {
+    "body_size_x": 27.0,
+    "body_size_y": 27.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffrb900": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffrc1156": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffrc1517": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffrc1760": {
+    "body_size_x": 42.5,
+    "body_size_y": 42.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffrc900": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffrd1156": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffre1156": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffre1517": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffrf1760": {
+    "body_size_x": 42.5,
+    "body_size_y": 42.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffrg1517": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffv1156": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffv1157": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffv1158": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffv1761": {
+    "body_size_x": 42.5,
+    "body_size_y": 42.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffv1927": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffv676": {
+    "body_size_x": 27.0,
+    "body_size_y": 27.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffv900": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffv901": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffva1156": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffva1517": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffva1760": {
+    "body_size_x": 42.5,
+    "body_size_y": 42.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffva2104": {
+    "body_size_x": 47.5,
+    "body_size_y": 47.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffva676": {
+    "body_size_x": 27.0,
+    "body_size_y": 27.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffvb1156": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffvb1517": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffvb1760": {
+    "body_size_x": 42.5,
+    "body_size_y": 42.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffvb2104": {
+    "body_size_x": 47.5,
+    "body_size_y": 47.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffvb676": {
+    "body_size_x": 27.0,
+    "body_size_y": 27.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffvc1156": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffvc1517": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffvc1760": {
+    "body_size_x": 42.5,
+    "body_size_y": 42.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffvc2104": {
+    "body_size_x": 47.5,
+    "body_size_y": 47.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffvc900": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffvd1156": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffvd1517": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffvd1760": {
+    "body_size_x": 42.5,
+    "body_size_y": 42.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffvd900": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffve1156": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffve1517": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffve1760": {
+    "body_size_x": 42.5,
+    "body_size_y": 42.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffve1924": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffve900": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffvf1517": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffvf1760": {
+    "body_size_x": 42.5,
+    "body_size_y": 42.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffvg1517": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffvh1760": {
+    "body_size_x": 42.5,
+    "body_size_y": 42.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ffvj1760": {
+    "body_size_x": 42.5,
+    "body_size_y": 42.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fg484": {
+    "body_size_x": 23.0,
+    "body_size_y": 23.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fg676": {
+    "body_size_x": 27.0,
+    "body_size_y": 27.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fgg484": {
+    "body_size_x": 23.0,
+    "body_size_y": 23.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fgg676": {
+    "body_size_x": 27.0,
+    "body_size_y": 27.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fgga484": {
+    "body_size_x": 23.0,
+    "body_size_y": 23.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fgga676": {
+    "body_size_x": 27.0,
+    "body_size_y": 27.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fh1761": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fhg1761": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fhga2104": {
+    "body_size_x": 52.5,
+    "body_size_y": 52.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fhgb2104": {
+    "body_size_x": 52.5,
+    "body_size_y": 52.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fhgc2104": {
+    "body_size_x": 52.5,
+    "body_size_y": 52.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fhge1924": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.55,
+    "pad_diameter_mm": 0.5,
+    "paste_diameter_mm": 0.45,
+    "pitch_mm": 1.0
+  },
+  "figd2104": {
+    "body_size_x": 52.5,
+    "body_size_y": 52.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fl1925": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fl1926": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fl1928": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fl1930": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "flg1925": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "flg1926": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "flg1928": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "flg1930": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "flga2104": {
+    "body_size_x": 47.5,
+    "body_size_y": 47.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "flga2577": {
+    "body_size_x": 52.5,
+    "body_size_y": 52.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "flga2892": {
+    "body_size_x": 55.0,
+    "body_size_y": 55.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "flgb2104": {
+    "body_size_x": 47.5,
+    "body_size_y": 47.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "flgb2377": {
+    "body_size_x": 50.0,
+    "body_size_y": 50.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "flgc2104": {
+    "body_size_x": 47.5,
+    "body_size_y": 47.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "flgf1924": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "flra2104": {
+    "body_size_x": 47.5,
+    "body_size_y": 47.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "flrb2104": {
+    "body_size_x": 47.5,
+    "body_size_y": 47.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "flrc2104": {
+    "body_size_x": 47.5,
+    "body_size_y": 47.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "flva1517": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "flva2104": {
+    "body_size_x": 47.5,
+    "body_size_y": 47.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "flvb1517": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "flvb1760": {
+    "body_size_x": 42.5,
+    "body_size_y": 42.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "flvb2104": {
+    "body_size_x": 47.5,
+    "body_size_y": 47.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "flvc2104": {
+    "body_size_x": 47.5,
+    "body_size_y": 47.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "flvd1517": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "flvd1924": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "flvf1924": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fsga2577": {
+    "body_size_x": 52.5,
+    "body_size_y": 52.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fsgd2104": {
+    "body_size_x": 47.5,
+    "body_size_y": 47.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fsre1156": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fsrf1760": {
+    "body_size_x": 42.5,
+    "body_size_y": 42.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fsrg1517": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fsva3824": {
+    "body_size_x": 65.0,
+    "body_size_y": 65.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fsvb3824": {
+    "body_size_x": 65.0,
+    "body_size_y": 65.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fsvb784": {
+    "body_size_x": 29.0,
+    "body_size_y": 29.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fsvd1156": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fsve1156": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fsvf1760": {
+    "body_size_x": 42.5,
+    "body_size_y": 42.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fsvg1517": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fsvh1760": {
+    "body_size_x": 42.5,
+    "body_size_y": 42.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fsvh1924": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fsvh2104": {
+    "body_size_x": 47.5,
+    "body_size_y": 47.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fsvh2892": {
+    "body_size_x": 55.0,
+    "body_size_y": 55.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fsvj1760": {
+    "body_size_x": 42.5,
+    "body_size_y": 42.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "fsvk2892": {
+    "body_size_x": 55.0,
+    "body_size_y": 55.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ft256": {
+    "body_size_x": 17.0,
+    "body_size_y": 17.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ftb196": {
+    "body_size_x": 15.0,
+    "body_size_y": 15.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ftg256": {
+    "body_size_x": 17.0,
+    "body_size_y": 17.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ftgb196": {
+    "body_size_x": 15.0,
+    "body_size_y": 15.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "lsva4737": {
+    "body_size_x": 70.0,
+    "body_size_y": 70.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "lsvc4072": {
+    "body_size_x": 65.0,
+    "body_size_y": 65.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "nbvb1024": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "nfvb1369": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "nfvd1024": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "nfvi1369": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "nfvm1369": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "nsrg1369": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "nsvf1369": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "nsvg1369": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "nsvh1369": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "nsvo1369": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "pfcva289": {
+    "body_size_x": 9.0,
+    "body_size_y": 9.0,
+    "mask_opening_mm": 0.3,
+    "pad_diameter_mm": 0.25,
+    "paste_diameter_mm": 0.2,
+    "pitch_mm": 0.5
+  },
+  "pffra1156": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pffrb676": {
+    "body_size_x": 27.0,
+    "body_size_y": 27.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pffrc1517": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pffre1517": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pffva1156": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pffva1760": {
+    "body_size_x": 42.5,
+    "body_size_y": 42.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pffva676": {
+    "body_size_x": 27.0,
+    "body_size_y": 27.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pffvb2104": {
+    "body_size_x": 47.5,
+    "body_size_y": 47.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pffvb676": {
+    "body_size_x": 27.0,
+    "body_size_y": 27.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pffvc1517": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pffvd900": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pffve1517": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pffve1760": {
+    "body_size_x": 42.5,
+    "body_size_y": 42.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pffve900": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pffvj1760": {
+    "body_size_x": 42.5,
+    "body_size_y": 42.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pfhga2104": {
+    "body_size_x": 52.5,
+    "body_size_y": 52.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pfhgb2104": {
+    "body_size_x": 52.5,
+    "body_size_y": 52.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pfhgc2104": {
+    "body_size_x": 52.5,
+    "body_size_y": 52.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pfigd2104": {
+    "body_size_x": 52.5,
+    "body_size_y": 52.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pflga2104": {
+    "body_size_x": 47.5,
+    "body_size_y": 47.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pflga2577": {
+    "body_size_x": 52.5,
+    "body_size_y": 52.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pflgb2104": {
+    "body_size_x": 47.5,
+    "body_size_y": 47.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pflgc2104": {
+    "body_size_x": 47.5,
+    "body_size_y": 47.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pflgf1924": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pflra2104": {
+    "body_size_x": 47.5,
+    "body_size_y": 47.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pflrb2104": {
+    "body_size_x": 47.5,
+    "body_size_y": 47.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pflrc2104": {
+    "body_size_x": 47.5,
+    "body_size_y": 47.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pflva2104": {
+    "body_size_x": 47.5,
+    "body_size_y": 47.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pflvb2104": {
+    "body_size_x": 47.5,
+    "body_size_y": 47.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pflvc2104": {
+    "body_size_x": 47.5,
+    "body_size_y": 47.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pfsga2577": {
+    "body_size_x": 52.5,
+    "body_size_y": 52.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pfsgd2104": {
+    "body_size_x": 47.5,
+    "body_size_y": 47.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pfsva3824": {
+    "body_size_x": 65.0,
+    "body_size_y": 65.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pfsvb3824": {
+    "body_size_x": 65.0,
+    "body_size_y": 65.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pfsvh1924": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pfsvh2104": {
+    "body_size_x": 47.5,
+    "body_size_y": 47.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pfsvh2892": {
+    "body_size_x": 55.0,
+    "body_size_y": 55.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pfsvj1760": {
+    "body_size_x": 42.5,
+    "body_size_y": 42.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "pfsvk2892": {
+    "body_size_x": 55.0,
+    "body_size_y": 55.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "psbvb484": {
+    "body_size_x": 19.0,
+    "body_size_y": 19.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "psbvc484": {
+    "body_size_x": 19.0,
+    "body_size_y": 19.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "psfrb784": {
+    "body_size_x": 23.0,
+    "body_size_y": 23.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "psfvb784": {
+    "body_size_x": 23.0,
+    "body_size_y": 23.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "pubva368": {
+    "body_size_x": 11.5,
+    "body_size_y": 9.5,
+    "mask_opening_mm": 0.3,
+    "pad_diameter_mm": 0.25,
+    "paste_diameter_mm": 0.2,
+    "pitch_mm": 0.5
+  },
+  "pvsva1365": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "rb484": {
+    "body_size_x": 23.0,
+    "body_size_y": 23.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "rb676": {
+    "body_size_x": 27.0,
+    "body_size_y": 27.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "rba676": {
+    "body_size_x": 27.0,
+    "body_size_y": 27.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "rf1156": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "rf1157": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "rf1158": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "rf1761": {
+    "body_size_x": 42.5,
+    "body_size_y": 42.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "rf1930": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "rf676": {
+    "body_size_x": 27.0,
+    "body_size_y": 27.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "rf900": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "rfa1156": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "rfg676": {
+    "body_size_x": 27.0,
+    "body_size_y": 27.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "rld1517": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "rlf1924": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "rs484": {
+    "body_size_x": 19.0,
+    "body_size_y": 19.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sb484": {
+    "body_size_x": 19.0,
+    "body_size_y": 19.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sbg484": {
+    "body_size_x": 19.0,
+    "body_size_y": 19.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sbg485": {
+    "body_size_x": 19.0,
+    "body_size_y": 19.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sbra484": {
+    "body_size_x": 19.0,
+    "body_size_y": 19.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sbrj1369": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sbv484": {
+    "body_size_x": 19.0,
+    "body_size_y": 19.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sbv485": {
+    "body_size_x": 19.0,
+    "body_size_y": 19.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sbva484": {
+    "body_size_x": 19.0,
+    "body_size_y": 19.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sbva625": {
+    "body_size_x": 21.0,
+    "body_size_y": 21.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sbvb484": {
+    "body_size_x": 19.0,
+    "body_size_y": 19.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sbvc484": {
+    "body_size_x": 19.0,
+    "body_size_y": 19.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sbvj1369": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sclg225": {
+    "body_size_x": 13.0,
+    "body_size_y": 13.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sclg400": {
+    "body_size_x": 17.0,
+    "body_size_y": 17.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sclg484": {
+    "body_size_x": 19.0,
+    "body_size_y": 19.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sclg485": {
+    "body_size_x": 19.0,
+    "body_size_y": 19.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sfra484": {
+    "body_size_x": 19.0,
+    "body_size_y": 19.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sfrb784": {
+    "body_size_x": 23.0,
+    "body_size_y": 23.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sfrc784": {
+    "body_size_x": 23.0,
+    "body_size_y": 23.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sfva1089": {
+    "body_size_x": 27.0,
+    "body_size_y": 27.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sfva1221": {
+    "body_size_x": 29.0,
+    "body_size_y": 29.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sfva1440": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sfva625": {
+    "body_size_x": 21.0,
+    "body_size_y": 21.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sfva784": {
+    "body_size_x": 23.0,
+    "body_size_y": 23.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sfvb1440": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sfvb784": {
+    "body_size_x": 23.0,
+    "body_size_y": 23.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sfvc784": {
+    "body_size_x": 23.0,
+    "body_size_y": 23.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sfvd784": {
+    "body_size_x": 23.0,
+    "body_size_y": 23.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "sfve784": {
+    "body_size_x": 23.0,
+    "body_size_y": 23.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "ssra2112": {
+    "body_size_x": 47.5,
+    "body_size_y": 47.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ssra784": {
+    "body_size_x": 23.0,
+    "body_size_y": 23.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "ssva1440": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "ssva2112": {
+    "body_size_x": 37.5,
+    "body_size_y": 37.5,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "ssva2397": {
+    "body_size_x": 50.0,
+    "body_size_y": 50.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ssvl1760": {
+    "body_size_x": 42.5,
+    "body_size_y": 42.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "tcgsfvc784": {
+    "body_size_x": 29.5,
+    "body_size_y": 29.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "tcgsfvd784": {
+    "body_size_x": 29.5,
+    "body_size_y": 29.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "tcpg236": {
+    "body_size_x": 10.0,
+    "body_size_y": 10.0,
+    "mask_opening_mm": 0.3,
+    "pad_diameter_mm": 0.25,
+    "paste_diameter_mm": 0.2,
+    "pitch_mm": 0.5
+  },
+  "tcpg238": {
+    "body_size_x": 10.0,
+    "body_size_y": 10.0,
+    "mask_opening_mm": 0.3,
+    "pad_diameter_mm": 0.25,
+    "paste_diameter_mm": 0.2,
+    "pitch_mm": 0.5
+  },
+  "tcsg324": {
+    "body_size_x": 15.0,
+    "body_size_y": 15.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "tcsg325": {
+    "body_size_x": 15.0,
+    "body_size_y": 15.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "tegsfvc784": {
+    "body_size_x": 29.5,
+    "body_size_y": 29.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "tegsfvd784": {
+    "body_size_x": 29.5,
+    "body_size_y": 29.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "tfbg484": {
+    "body_size_x": 23.0,
+    "body_size_y": 23.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "tfbg676": {
+    "body_size_x": 27.0,
+    "body_size_y": 27.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "tfbg900": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "tffg1156": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "tffg1157": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "tffg1158": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "tffg1761": {
+    "body_size_x": 42.5,
+    "body_size_y": 42.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "tffg1926": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "tffg1927": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "tffg1928": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "tffg1930": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "tffg676": {
+    "body_size_x": 27.0,
+    "body_size_y": 27.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "tffg900": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "tffg901": {
+    "body_size_x": 31.0,
+    "body_size_y": 31.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "tfg484": {
+    "body_size_x": 23.0,
+    "body_size_y": 23.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "tfgg484": {
+    "body_size_x": 23.0,
+    "body_size_y": 23.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "tfgg676": {
+    "body_size_x": 27.0,
+    "body_size_y": 27.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "tfhg1761": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "tflg1925": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "tflg1926": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "tflg1928": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "tflg1930": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "tftg256": {
+    "body_size_x": 17.0,
+    "body_size_y": 17.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "thcg1155": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "thcg1931": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "thcg1932": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "tsbg484": {
+    "body_size_x": 19.0,
+    "body_size_y": 19.0,
+    "mask_opening_mm": 0.45,
+    "pad_diameter_mm": 0.4,
+    "paste_diameter_mm": 0.35,
+    "pitch_mm": 0.8
+  },
+  "tsg484": {
+    "body_size_x": 23.0,
+    "body_size_y": 23.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ubva368": {
+    "body_size_x": 11.5,
+    "body_size_y": 9.5,
+    "mask_opening_mm": 0.3,
+    "pad_diameter_mm": 0.25,
+    "paste_diameter_mm": 0.2,
+    "pitch_mm": 0.5
+  },
+  "ubva494": {
+    "body_size_x": 15.0,
+    "body_size_y": 9.5,
+    "mask_opening_mm": 0.3,
+    "pad_diameter_mm": 0.25,
+    "paste_diameter_mm": 0.2,
+    "pitch_mm": 0.5
+  },
+  "ubva530": {
+    "body_size_x": 16.0,
+    "body_size_y": 9.5,
+    "mask_opening_mm": 0.3,
+    "pad_diameter_mm": 0.25,
+    "paste_diameter_mm": 0.2,
+    "pitch_mm": 0.5
+  },
+  "ug475": {
+    "body_size_x": 27.0,
+    "body_size_y": 27.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "ug575": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "v1": {
+    "body_size_x": 27.0,
+    "body_size_y": 27.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "vfvc1596": {
+    "body_size_x": 37.5,
+    "body_size_y": 37.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "vfvc1760": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "vfvf1760": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "vira1596": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "viva1596": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "vsra1596": {
+    "body_size_x": 37.5,
+    "body_size_y": 37.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "vsra2197": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "vsra2785": {
+    "body_size_x": 50.0,
+    "body_size_y": 50.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "vsra3340": {
+    "body_size_x": 55.0,
+    "body_size_y": 55.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "vsrb3340": {
+    "body_size_x": 55.0,
+    "body_size_y": 55.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "vsrc1596": {
+    "body_size_x": 37.5,
+    "body_size_y": 37.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "vsrd1760": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "vsva1365": {
+    "body_size_x": 35.0,
+    "body_size_y": 35.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "vsva1596": {
+    "body_size_x": 37.5,
+    "body_size_y": 37.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "vsva2197": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "vsva2785": {
+    "body_size_x": 50.0,
+    "body_size_y": 50.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "vsva3014": {
+    "body_size_x": 50.0,
+    "body_size_y": 50.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "vsva3340": {
+    "body_size_x": 55.0,
+    "body_size_y": 55.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "vsva3697": {
+    "body_size_x": 57.5,
+    "body_size_y": 57.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "vsva5601": {
+    "body_size_x": 70.0,
+    "body_size_y": 70.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "vsva6865": {
+    "body_size_x": 77.5,
+    "body_size_y": 77.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "vsvb2197": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "vsvb3340": {
+    "body_size_x": 55.0,
+    "body_size_y": 55.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "vsvb6865": {
+    "body_size_x": 77.5,
+    "body_size_y": 77.5,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "vsvc2021": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 1.0
+  },
+  "vsvc3340": {
+    "body_size_x": 55.0,
+    "body_size_y": 55.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "vsvd1760": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "vsvd2197": {
+    "body_size_x": 45.0,
+    "body_size_y": 45.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "vsvh1760": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "vsvi1760": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "vsvj1760": {
+    "body_size_x": 40.0,
+    "body_size_y": 40.0,
+    "mask_opening_mm": 0.5,
+    "pad_diameter_mm": 0.45,
+    "paste_diameter_mm": 0.4,
+    "pitch_mm": 0.92
+  },
+  "x8": {
+    "body_size_x": 8.0,
+    "body_size_y": 8.0,
+    "mask_opening_mm": 0.3,
+    "pad_diameter_mm": 0.25,
+    "paste_diameter_mm": 0.2,
+    "pitch_mm": 0.5
+  },
+  "x9": {
+    "body_size_x": 9.0,
+    "body_size_y": 9.0,
+    "mask_opening_mm": 0.55,
+    "pad_diameter_mm": 0.5,
+    "paste_diameter_mm": 0.45,
+    "pitch_mm": 289.0
+  },
+  "a": {}
+}

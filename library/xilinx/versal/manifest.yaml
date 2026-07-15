@@ -1,0 +1,17 @@
+vendor:
+  id: xilinx
+  name: Xilinx
+  display_name: Xilinx
+series:
+  id: versal
+  name: versal
+  family: ULTRASCALE_PLUS
+  data_dirs:
+  - pinout_file/xilinx/versal/versal-all/versal-all
+  column_map:
+    pin: Pin
+    pin_name: Pin Name
+    bank: Bank
+    io_type: I/O Type
+    slr: Super Logic Region
+models: []
