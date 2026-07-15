@@ -98,7 +98,7 @@ cd PolyLibs-opensource/PolyLibs
 |----------|--------|------|
 | `test_classifier.py` | 11 | 引脚分类规则（电源、地、IO、MGT 等） |
 | `test_cli.py` | 4 | CLI 扫描、验证、添加封装 |
-| `test_generators.py` | 5 | PADS/Cadence/Altium/KiCad 生成器输出 |
+| `test_generators.py` | 1 | KiCad 生成器输出 |
 | `test_geometry.py` | 9 | 封装几何计算与数据库查询 |
 | `test_gui.py` | 4 | GUI 构建输出、设备树、生成器注册表 |
 | `test_integration.py` | 4 | 端到端生成（7series / UltraScale / UltraScale+） |

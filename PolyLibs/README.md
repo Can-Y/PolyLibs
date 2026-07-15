@@ -1,25 +1,26 @@
 # PolyLibs
 
-一站式 FPGA 库生成器，支持多厂商型号扩展。
+Xilinx FPGA 原理图符号与 PCB 封装生成工具。
 
-## Install
-
-```bash
-pip install -r requirements.txt
-```
-
-## Run GUI
+## 运行
 
 ```bash
-python polylibs_gui.py
+cd PolyLibs
+python -m polylibs
 ```
 
-## Run CLI
+## 测试
 
 ```bash
-python -m polylibs library scan
+pytest
 ```
 
-## Add models
+## 支持的 EDA 工具
 
-See `docs/model-expansion-user-guide.md`.
+- KiCad
+
+## 支持的 FPGA 系列
+
+- 7-Series
+- UltraScale
+- UltraScale+
