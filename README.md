@@ -1,6 +1,6 @@
 # PolyLibs 使用说明
 
-PolyLibs 是一个 Xilinx FPGA 原理图符号与 PCB 封装生成工具，支持 PADS、Cadence（OrCAD/Allegro）、Altium Designer 和 KiCad 输出格式。
+PolyLibs 是一个 Xilinx FPGA 原理图符号与 PCB 封装生成工具，支持 KiCad 输出格式。
 
 ## 1. 如何运行
 
