@@ -1,134 +1,151 @@
 # Session Handoff
 
-**Date:** 2026-07-15
-**Project:** E:/1_work/16_pinout (PolyLibs)
-**Status:** Initial release layout finalized; PolyLibs.exe rebuilt and verified
+**Date:** 2026-07-15  
+**Project:** E:/1_work/15_pinout (PolyLibs)  
+**Status:** Layout unified, open-source repo initialized, and pushed to Gitee
 
 ## What Was Done
 
-### 1. Hierarchical pinout data layout
-Created `pinout_file/` and moved all raw pinout CSV folders out of the project root:
+### 1. Unified project layout
+
+Made `PolyLibs-opensource/` a mirror of the project root structure:
 
 ```text
-pinout_file/
-└── xilinx/
-    ├── 7series/
-    │   ├── a7all/
-    │   ├── k7all/
-    │   ├── s7all/s7all/
-    │   └── v7all/
-    ├── ultrascale/usaall/
-    ├── ultrascale_plus/usaall/
-    ├── versal/versal-all/versal-all/
-    ├── zynq7000/z7all/7zSeriesALL/
-    └── zynq_us_plus/zupall/zupall/
+E:/1_work/15_pinout/
+├── PolyLibs/                  # Main development package (independent Git repo)
+├── PolyLibs-opensource/       # Open-source release copy (independent Git repo)
+│   └── PolyLibs/              # Nested package directory
+├── data/                      # pkg_db.json runtime data
+├── docs/                      # Plans, specs, templates
+├── library/                   # Vendor/series manifest.yaml files
+├── output/                    # Generated outputs (emptied)
+├── pinout_file/               # Hierarchical raw pinout CSV data
+├── batch_footprints.py        # Batch KiCad footprint generation
+├── batch_generate.py          # Batch full KiCad library generation
+├── bug_report.md              # Bug report template
+├── build_minimal.py           # Minimal build helper
+├── extract_all_pkg_specs.py   # PDF package spec extraction
+├── extract_pkg_specs.py       # Text package spec extraction
+├── FPGAer_Zone_258.jpg        # QR code image bundled in the exe
+├── handoff.md                 # This file
+├── PolyLibs.spec              # PyInstaller spec
+├── polylibs.bat               # One-click launcher
+├── polylibs_gui.py            # GUI entry point
+├── report.md                  # Test & cleanup report
+├── start.py                   # Dependency check + GUI launcher
+├── update_pkg_db.py           # Package database updater
+├── user_guide.md              # User guide
+├── verify_batch.py            # Batch verification
+└── verify_footprint.py        # Single footprint verification
 ```
 
-The mixed `usaall/` directory was split by device prefix:
-- `xc[kv]u\d+` (no trailing `p`) → `ultrascale/usaall/`
-- `xcau*`, `x[ckqr]u*p*` → `ultrascale_plus/usaall/`
+### 2. Cleaned unused files
 
-### 2. Updated all path references
-- `library/xilinx/*/manifest.yaml` — `data_dirs` now point under `pinout_file/xilinx/...`
-- `polylibs_gui.py` — root detection recognizes `library/`, `data/`, and `pinout_file/`; prefers manifest-driven `library/`
-- `PolyLibs.spec` — post-build copies `pinout_file/` (plus legacy flat dirs as fallback)
-- `PolyLibs/polylibs/gui.py` — `_SERIES_DIR_MAP`, default `run_gui()` dirs, user-facing error message
-- `PolyLibs/tests/conftest.py`, `tests/test_scaffold.py` — fixtures reflect new paths
-- `PolyLibs/scripts/extend_pkg_db.py` — scans `pinout_file/xilinx/...`
-- `update_pkg_db.py` — data_dirs updated
-- All corresponding files synced to `PolyLibs-opensource/`
+Deleted non-essential files to reduce clutter:
 
-### 3. Archived old fpga2cad project
-Moved the following out of the project root into `archive/`:
-- `fpga2cad/`
-- `fpga2cad.bat`
-- `build_exe.py`
-- `fpga2cad.spec`
-- `fpga2cad_new.spec`
-- `test_cadence_gen.py`
-- old `dist/output/` backup
+- All `__pycache__/` and `.pytest_cache/` directories
+- Broken venv remnants (`PolyLibs-opensource/Lib/`, `Scripts/`, `pyvenv.cfg`, `Include/`)
+- Redundant `.gitkeep` files
+- `archive/` directory (old fpga2cad project backup)
+- `docs/references/` directory (160 MB of PDF/txt reference files)
+- Duplicate docs and extra `docs/templates/` in `PolyLibs-opensource/`
+- Historical contents of `output/`
 
-### 4. Cleaned root clutter
-Deleted: `__pycache__/`, `build/`, `allegro_25.1_P001_4349869_AllegroMiniDump.dmp`, `=6.0`, and moved reference PDFs/txt files into `docs/references/`.
+### 3. Fixed `polylibs.bat`
 
-### 5. Rebuilt distribution
-- Ran `python -m PyInstaller PolyLibs.spec --noconfirm`
-- New `dist/` contains only:
-  - `PolyLibs.exe`
-  - `data/`
-  - `library/`
-  - `pinout_file/`
-- Verified portability by copying `dist/` to a temp directory, renaming it, and simulating frozen execution — models are discovered correctly.
+Fixed a batch variable-expansion bug that caused venv creation to fail when `.venv` was deleted:
+
+- Split venv path decision and venv creation into separate steps so `%VENV_DIR%` is read after the block completes.
+- `polylibs.bat` now recreates the venv correctly and installs `PyYAML` + `Pillow` automatically.
+- Applied the same fix to both root and `PolyLibs-opensource/` launchers.
+
+### 4. Git repositories initialized and pushed
+
+Initialized three independent Git repositories:
+
+| Repository | Path | Latest commit |
+|------------|------|---------------|
+| Main package | `PolyLibs/.git` | `0207ae0` — README lists only KiCad |
+| Project root | `E:/1_work/15_pinout/.git` | `fbd56b4` — user_guide built-in series list |
+| Open-source | `PolyLibs-opensource/.git` | `12ae571` — pushed to Gitee |
+
+Gitee remote: https://gitee.com/yocan/PolyLibs
+
+### 5. KiCad-only public-facing presentation
+
+- GUI `Application.FORMATS = ["KiCad"]` already shows only KiCad.
+- `GeneratorRegistry` still contains PADS/Cadence/Altium/KiCad generators internally, but batch scripts and UI default to KiCad-only output.
+- Updated `README.md`, `user_guide.md`, and `report.md` to describe only KiCad support.
+
+### 6. Documentation added
+
+- `report.md` — test results, cleanup summary, volume stats
+- `user_guide.md` — run, add devices, generate libraries, bug reporting
+- `bug_report.md` — bug report template
+- `user_guide.md` includes a built-in vendor/series table
 
 ## Test / Verification Results
 
 | Suite | Result |
 |-------|--------|
-| `cd PolyLibs && python -m pytest -q` | **70 passed** |
-| `cd PolyLibs-opensource && python -m pytest -q` | **70 passed** |
-| Portable `dist/` scan | **531 unique models** across 6 Xilinx series |
-
-Scan breakdown from portable verification:
-- 7series: 96
-- ultrascale: 50
-- ultrascale_plus: 79
-- versal: 139
-- zynq7000: 22
-- zynq_us_plus: 145
-- **Total: 531**
+| `cd PolyLibs && python -m pytest -q` | **72 passed** |
+| `cd PolyLibs-opensource/PolyLibs && python -m pytest -q` | **72 passed** |
+| `polylibs library validate --root ..` | **All manifests OK** |
+| `polylibs.bat --check` | Dependencies OK, venv auto-creates |
 
 ## Current Root Layout
 
 ```text
-E:/1_work/16_pinout/
-├── PolyLibs/                  # Main development package (has .git)
-├── PolyLibs-opensource/       # Backup copy prepared for open-source release
-├── archive/                   # Old fpga2cad project and old dist/output
-├── data/                      # pkg_db.json and related runtime data
-├── dist/                      # Standalone distribution (exe + data)
-├── docs/                      # Documentation and references/
-├── library/                   # Vendor/series manifest.yaml files
-├── output/                    # Generated library outputs / verification samples
+E:/1_work/15_pinout/
+├── PolyLibs/                  # Main development package
+├── PolyLibs-opensource/       # Open-source release copy (mirrors root)
+├── data/                      # pkg_db.json
+├── docs/                      # Documentation and templates
+├── library/                   # Vendor/series manifests
+├── output/                    # Empty output directory
 ├── pinout_file/               # Hierarchical raw pinout CSV data
-├── .venv/                     # Python virtual environment
-├── .superpowers/              # Kimi Code session config
-├── FPGAer_Zone_258.jpg        # QR code image bundled in the exe
-├── PolyLibs.spec              # PyInstaller spec
-├── polylibs_gui.py            # GUI entry point
-├── handoff.md                 # This file
-├── extract_pkg_specs.py       # CSV extraction helpers
-├── extract_all_pkg_specs.py
+├── .git/                      # Root Git repository
+├── .gitignore                 # Root ignore rules
+├── FPGAer_Zone_258.jpg
+├── PolyLibs.spec
+├── polylibs.bat
+├── polylibs_gui.py
+├── start.py
+├── handoff.md
+├── report.md
+├── user_guide.md
+├── bug_report.md
 ├── update_pkg_db.py
-├── batch_footprints.py        # Batch footprint generation
-├── batch_generate.py          # Batch full library generation
+├── extract_pkg_specs.py
+├── extract_all_pkg_specs.py
+├── batch_generate.py
+├── batch_footprints.py
 ├── verify_batch.py
 └── verify_footprint.py
 ```
 
 ## Known State
 
-- `dist/` is self-contained and can be copied/renamed independently.
-- `PolyLibs.exe` resolves its project root from `sys.executable` parent and finds `library/` + `pinout_file/`.
-- `fpga2cad` is archived; the old `dist/fpga2cad_new.exe` is no longer rebuilt.
+- `PolyLibs-opensource/` is pushed to Gitee at `https://gitee.com/yocan/PolyLibs`.
+- `dist/PolyLibs.exe` exists but `dist/` is excluded from Git.
+- GUI defaults to KiCad-only output; other generator code remains available for future use.
 - No failing tests.
 
 ## Possible Next Steps
 
 1. **Add a new vendor/series**:
-   - Create `pinout_file/<vendor>/<series>/<raw_data_dir>/` with CSV/TXT pinout files.
-   - Create `library/<vendor>/<series>/manifest.yaml` with `vendor`, `series`, `data_dirs`, and `column_map`.
-   - Re-run `python -m PyInstaller PolyLibs.spec --noconfirm` only if the exe itself needs updating; otherwise just distribute the updated `dist/` contents.
+   - Add raw CSV data under `pinout_file/<vendor>/<series>/`.
+   - Add `library/<vendor>/<series>/manifest.yaml`.
+   - Update `data/pkg_db.json` if new package codes are needed.
+   - Run `polylibs library validate --root ..`.
 
-2. **Polish the open-source backup**:
-   - Decide whether `PolyLibs-opensource/` should become the GitHub repo root or remain a backup.
-   - If making it the repo root, rename to `PolyLibs/` and delete the nested copy.
-   - Add a top-level `.gitignore`, `LICENSE`, and `README.md` tailored for GitHub.
+2. **Improve open-source repo**:
+   - Add a top-level `LICENSE` (Gitee already created one via web UI).
+   - Optionally make `PolyLibs-opensource/` the standalone repo root and remove the nested `PolyLibs/` copy.
 
-3. **Reduce distribution size**:
-   - `dist/` is ~108 MB; `pinout_file/` accounts for ~90 MB.
-   - For a minimal installer, ship only the series the user actually needs.
+3. **Build release exe**:
+   - Run `PolyLibs/.venv/Scripts/python -m PyInstaller PolyLibs.spec --noconfirm`.
+   - Distribute `dist/PolyLibs.exe` with `data/`, `library/`, and `pinout_file/`.
 
-4. **GUI/UX improvements**:
-   - Pre-fill advanced dimension defaults from package registry.
-   - Add vendor selection dropdown above series selection.
-   - Display the FPGAer_Zone image and text in the About pane.
+4. **Push remaining repos**:
+   - `PolyLibs/.git` and root `E:/1_work/15_pinout/.git` are local only; push to GitHub/Gitee when remotes are configured.
