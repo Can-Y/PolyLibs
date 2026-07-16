@@ -1,6 +1,22 @@
 # PolyLibs 使用说明
 
-PolyLibs 是一个 Xilinx FPGA 原理图符号与 PCB 封装生成工具，支持 KiCad 输出格式。
+PolyLibs 是一个 Xilinx FPGA 原理图符号与 PCB 封装生成工具，输出 KiCad 格式。
+
+## 内置器件系列
+
+当前内置以下厂商与系列，可直接在 GUI 中选择生成：
+
+| 厂商 | 系列 |
+|------|------|
+| Xilinx | 7series |
+| Xilinx | ultrascale |
+| Xilinx | ultrascale_plus |
+| Xilinx | versal |
+| Xilinx | zynq7000 |
+| Xilinx | zynq_us_plus |
+| ExampleVendor | example_series（示例） |
+
+如需添加新的厂商或系列，请参考第 2 节「如何新增器件」。
 
 ## 1. 如何运行
 
