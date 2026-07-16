@@ -1,8 +1,8 @@
 # Session Handoff
 
-**Date:** 2026-07-15  
+**Date:** 2026-07-16  
 **Project:** E:/1_work/15_pinout (PolyLibs)  
-**Status:** Layout unified, open-source repo initialized, and pushed to Gitee
+**Status:** Open-source repo created on GitHub, README synced, and pushed
 
 ## What Was Done
 
@@ -67,8 +67,9 @@ Initialized three independent Git repositories:
 |------------|------|---------------|
 | Main package | `PolyLibs/.git` | `0207ae0` — README lists only KiCad |
 | Project root | `E:/1_work/15_pinout/.git` | `fbd56b4` — user_guide built-in series list |
-| Open-source | `PolyLibs-opensource/.git` | `12ae571` — pushed to Gitee |
+| Open-source | `PolyLibs-opensource/.git` | `febb726` — README synced from user_guide.md and pushed to GitHub |
 
+GitHub remote: https://github.com/Can-Y/PolyLibs  
 Gitee remote: https://gitee.com/yocan/PolyLibs
 
 ### 5. KiCad-only public-facing presentation
@@ -83,6 +84,12 @@ Gitee remote: https://gitee.com/yocan/PolyLibs
 - `user_guide.md` — run, add devices, generate libraries, bug reporting
 - `bug_report.md` — bug report template
 - `user_guide.md` includes a built-in vendor/series table
+
+### 7. GitHub repository created and README synced
+
+- Created public GitHub repository `Can-Y/PolyLibs` at `https://github.com/Can-Y/PolyLibs`.
+- Synced `README.md` with `user_guide.md` so the top-level README includes the built-in vendor/series table and all usage instructions.
+- Pushed the updated `README.md` to GitHub (`febb726`).
 
 ## Test / Verification Results
 
@@ -126,7 +133,8 @@ E:/1_work/15_pinout/
 
 ## Known State
 
-- `PolyLibs-opensource/` is pushed to Gitee at `https://gitee.com/yocan/PolyLibs`.
+- `PolyLibs-opensource/` is pushed to **GitHub** at `https://github.com/Can-Y/PolyLibs` and mirrored on **Gitee** at `https://gitee.com/yocan/PolyLibs`.
+- `README.md` is now kept in sync with `user_guide.md`.
 - `dist/PolyLibs.exe` exists but `dist/` is excluded from Git.
 - GUI defaults to KiCad-only output; other generator code remains available for future use.
 - No failing tests.
@@ -148,4 +156,4 @@ E:/1_work/15_pinout/
    - Distribute `dist/PolyLibs.exe` with `data/`, `library/`, and `pinout_file/`.
 
 4. **Push remaining repos**:
-   - `PolyLibs/.git` and root `E:/1_work/15_pinout/.git` are local only; push to GitHub/Gitee when remotes are configured.
+   - `PolyLibs/.git` and root `E:/1_work/15_pinout/.git` are local only; configure remotes and push to GitHub/Gitee when ready.
