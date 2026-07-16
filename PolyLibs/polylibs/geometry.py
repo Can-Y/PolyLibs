@@ -224,6 +224,20 @@ class PackageRegistry:
 _PKG_REGISTRY: PackageRegistry | None = None
 
 
+def _default_data_root() -> Path:
+    """Locate the project root containing ``data/pkg_db.json``.
+
+    Search upward from the package directory so the same code works both in
+    the repo layout (``PolyLibs/polylibs/...``) and in a standalone
+    distribution where ``data/`` sits next to the package directory.
+    """
+    start = Path(__file__).parent.parent
+    for candidate in (start, start.parent):
+        if (candidate / "data" / "pkg_db.json").exists():
+            return candidate
+    return start
+
+
 def get_package_spec(
     package_code: str,
     ball_count: int = 0,
@@ -239,7 +253,7 @@ def get_package_spec(
     """
     global _PKG_REGISTRY
     if _PKG_REGISTRY is None or data_root is not None:
-        root = data_root or Path(__file__).parent.parent / "data"
+        root = data_root or _default_data_root()
         _PKG_REGISTRY = PackageRegistry(root).load()
     return _PKG_REGISTRY.get_spec(
         package_code,

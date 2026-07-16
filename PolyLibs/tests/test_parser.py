@@ -28,9 +28,10 @@ def test_split_device_package(full_name, expected_device, expected_pkg):
 def test_ball_id_to_indices():
     assert ball_id_to_indices("A1") == (0, 0)
     assert ball_id_to_indices("B2") == (1, 1)
-    # BGA column labels skip I, O, Q, S, X, Z: A..Y = 0..19, AA = 20, AB = 21.
-    assert ball_id_to_indices("AA10") == (20, 9)
-    assert ball_id_to_indices("AB1") == (21, 0)
+    # Columns are numeric; row labels skip I, O, Q, S, X, Z: A..Y = 0..19,
+    # AA = 20, AB = 21.
+    assert ball_id_to_indices("AA10") == (9, 20)
+    assert ball_id_to_indices("AB1") == (0, 21)
 
 
 def test_find_device_csv_exact(data_dirs: list[Path]):

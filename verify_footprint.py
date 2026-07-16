@@ -103,7 +103,11 @@ def main() -> int:
     svg_dir = fp_path.parent / f"{fp_path.stem}_verify_svg"
     svg_files = list(svg_dir.glob("*.svg"))
     if svg_files:
-        svg_pads = parse_svg_pads(svg_files[0])
+        # Derive the pad radius from the footprint itself instead of assuming
+        # a fixed value, so packages with non-default pad sizes are matched.
+        m = re.search(r'\(pad\b.*?\(size\s+([-0-9.]+)', fp_path.read_text(encoding="utf-8"), re.S)
+        pad_radius = float(m.group(1)) / 2.0 if m else 0.225
+        svg_pads = parse_svg_pads(svg_files[0], pad_radius_mm=pad_radius)
         svg_info = analyze({f"svg_{i}": p for i, p in enumerate(svg_pads)}, body_size)
         print(f"SVG pad count: {svg_info['count']}")
         print(f"SVG pad X range: {svg_info['min_x']:.4f} ~ {svg_info['max_x']:.4f} (span {svg_info['width']:.4f} mm)")

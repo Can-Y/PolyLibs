@@ -18,10 +18,10 @@ _BGA_ALPHABET = [c for c in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' if c not in {'I', 'O', 
 
 
 def _bga_alpha_to_index(alpha: str) -> int:
-    """Convert BGA column letters to a 0-based index.
+    """Convert BGA row letters to a 0-based index.
 
     Standard BGA ball labels omit I, O, Q, S, X and Z to avoid confusion with
-    digits.  Column labels therefore count like A..Y (20 letters), then AA, AB,
+    digits.  Row labels therefore count like A..Y (20 letters), then AA, AB,
     etc.  We treat the label as a base-20 number where A=1, B=2, ..., Y=20 and
     subtract one to obtain a zero-based index.
     """
@@ -29,19 +29,24 @@ def _bga_alpha_to_index(alpha: str) -> int:
     result = 0
     for ch in alpha:
         if ch not in _BGA_ALPHABET:
-            raise ValueError(f"Invalid BGA column letter '{ch}' in '{alpha}'")
+            raise ValueError(f"Invalid BGA row letter '{ch}' in '{alpha}'")
         result = result * len(_BGA_ALPHABET) + (_BGA_ALPHABET.index(ch) + 1)
     return result - 1
 
 
 def ball_id_to_indices(ball_id: str) -> tuple[int, int]:
-    """Convert BGA ball ID like 'AA16' to (col_index, row_index)."""
+    """Convert BGA ball ID like 'AA16' to (col_index, row_index).
+
+    Xilinx convention: the numeric part is the column (X direction) and the
+    alphabetic part is the row (Y direction), so e.g. a 29-column x 18-row
+    package is wider than it is tall.
+    """
     m = re.match(r'^([A-Za-z]+)(\d+)$', ball_id.strip())
     if not m:
         raise ValueError(f"Invalid BGA ball ID: {ball_id!r}")
     alpha, numeric = m.groups()
-    col = _bga_alpha_to_index(alpha)
-    row = int(numeric) - 1
+    col = int(numeric) - 1
+    row = _bga_alpha_to_index(alpha)
     return col, row
 
 
@@ -268,7 +273,16 @@ def parse_csv_with_mapping(csv_path: Path, series: Series) -> DevicePinout:
     raw = csv_path.read_text(encoding="utf-8-sig", errors="replace")
     lines = [line for line in raw.splitlines() if line.strip() != '"']
     reader = csv.reader(lines)
-    headers = [h.strip() for h in next(reader)]
+    # Xilinx CSVs carry a long '#' comment preamble before the real header
+    # row; skip comment/blank lines so the first real row becomes the header.
+    headers: list[str] = []
+    for row in reader:
+        if not row or all(c.strip() == "" for c in row):
+            continue
+        if row[0].strip().startswith("#"):
+            continue
+        headers = [h.strip() for h in row]
+        break
     header_index = {h: i for i, h in enumerate(headers)}
 
     col_idx = {
@@ -288,6 +302,9 @@ def parse_csv_with_mapping(csv_path: Path, series: Series) -> DevicePinout:
             continue
         first = row[0].strip()
         if not first or first.startswith("#"):
+            continue
+        if first.lower().startswith("total number of pins"):
+            # Xilinx CSV footer row, not a pin.
             continue
 
         ball_id = get("pin", row) or first
