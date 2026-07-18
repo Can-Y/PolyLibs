@@ -188,6 +188,10 @@ def _write_generated_files(
                     raise FileExistsError(
                         f"File already exists and overwrite=False: {path}"
                     )
+                if filename.endswith("_load.txt"):
+                    il_name = filename.replace("_load.txt", ".il")
+                    il_path = (tool_dir / il_name).as_posix()
+                    content = content.replace("__POLYLIBS_IL_PATH__", il_path)
                 path.write_text(content, encoding="utf-8")
                 files_written.append(str(path.relative_to(outdir)))
 
@@ -278,7 +282,7 @@ def build_output_from_library(
 
 
 class Application:
-    FORMATS = ["KiCad"]
+    FORMATS = ["KiCad", "Cadence"]
     _LEGACY_VENDOR = "Xilinx"
 
     def __init__(self, root: tk.Tk, data_dirs: list[Path]):
@@ -415,7 +419,9 @@ class Application:
 
         # Initialize default selections.
         if self.vendor_combo["values"]:
-            self.vendor_var.set(self.vendor_combo["values"][0])
+            values = self.vendor_combo["values"]
+            default = "xilinx" if "xilinx" in values else values[0]
+            self.vendor_var.set(default)
             self._on_vendor_changed()
             self._on_package_changed()
 

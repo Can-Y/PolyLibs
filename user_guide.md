@@ -1,6 +1,23 @@
 # PolyLibs 使用说明
 
-PolyLibs 是一个 Xilinx FPGA 原理图符号与 PCB 封装生成工具，输出 KiCad 格式。
+PolyLibs 是一个 Xilinx FPGA 原理图符号与 PCB 封装生成工具，输出 KiCad / Cadence 格式。
+
+## 为什么 KiCad 和 Cadence 双版本？
+
+| | KiCad | Cadence |
+|------|------|------|
+| 授权 | 完全开源免费 | 商业 EDA（需 License） |
+| 适用场景 | 个人项目、开源硬件、教学 | 企业级 PCB 设计、量产产品 |
+| 输出格式 | `.kicad_sym` + `.kicad_mod` | OrCAD Library XML + Allegro SKILL |
+| 上手难度 | 低，社区资源丰富 | 专业工具，学习曲线陡峭 |
+| 设计验证 | kicad-cli 可做自动化验证 | 交互验收，无自动化 CLI 验证 |
+
+> **Cadence License 免责声明：** PolyLibs **不提供** Cadence SPB / OrCAD / Allegro 的商业 License。
+> 本工具生成的仅为中间格式文件（XML / SKILL 脚本），需在已合法授权的 Cadence 环境中使用。
+> **商业用途请务必自行购买 Cadence License。** 未授权使用可能导致法律风险，开发者不承担任何责任。
+
+KiCad 是推荐的默认输出格式——免费、开源、社区活跃。Cadence 版本面向已有 License 的专业用户，
+帮助他们自动生成大型 BGA 封装（如 XCVU13P-FLGA2577），节省手动建库时间。
 
 ## 内置器件系列
 
