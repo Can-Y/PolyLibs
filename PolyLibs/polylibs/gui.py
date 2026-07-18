@@ -612,12 +612,12 @@ class Application:
         return self.root_dir / name
 
     def _load_logo(self, size: int = 100) -> ImageTk.PhotoImage | None:
-        """Load and resize the FPGAer_Zone logo image."""
+        """Load the embedded FPGAer_Zone QR code (hardcoded, not deletable)."""
         try:
-            image_path = self._resource_path("FPGAer_Zone_258.jpg")
-            if not image_path.exists():
-                return None
-            img = Image.open(image_path)
+            import base64, io
+            from ._qr_data import _EMBEDDED_QR
+            raw = base64.b64decode("".join(_EMBEDDED_QR))
+            img = Image.open(io.BytesIO(raw))
             img = img.resize((size, size), Image.Resampling.LANCZOS)
             return ImageTk.PhotoImage(img)
         except Exception:
