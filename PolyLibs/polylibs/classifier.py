@@ -16,15 +16,27 @@ from .models import (
 )
 
 POWER_PATTERNS = [
-    (re.compile(r'^VCCINT(?:_IO)?$', re.I), 'VCCINT'),
-    (re.compile(r'^VCCAUX(?:_IO)?$', re.I), 'VCCAUX'),
+    (re.compile(r'^VCCINT.*$', re.I), 'VCCINT'),
+    (re.compile(r'^VCCAUX.*$', re.I), 'VCCAUX'),
     (re.compile(r'^VCCO_(\d+)$', re.I), None),
+    (re.compile(r'^VCCO_PS.*$', re.I), 'VCCO_PSIO'),
+    (re.compile(r'^VCC_PS.*$', re.I), 'VCC_PS'),
+    (re.compile(r'^PS_MGTRAVCC.*$', re.I), 'PS_MGT'),
+    (re.compile(r'^PS_MGTRAVTT.*$', re.I), 'PS_MGT'),
     (re.compile(r'^VCCBRAM$', re.I), 'VCCBRAM'),
     (re.compile(r'^VCCADC_?\d*$', re.I), 'VCCADC'),
     (re.compile(r'^VCCBATT_?\d*$', re.I), 'VCCBATT'),
+    # Versal / GTYP transceiver analog supplies (GTYP_AVCC_*, GTYP_AVTT_, etc.)
+    (re.compile(r'^GT.*AVCC.*$', re.I), 'MGTAVCC'),
+    (re.compile(r'^GT.*AVTT.*$', re.I), 'MGTAVTT'),
+    (re.compile(r'^GT.*AVCCAUX.*$', re.I), 'MGTVCCAUX'),
     (re.compile(r'^MGTAVCC.*$', re.I), 'MGTAVCC'),
     (re.compile(r'^MGTAVTT.*$', re.I), 'MGTAVTT'),
     (re.compile(r'^MGTVCCAUX.*$', re.I), 'MGTVCCAUX'),
+    # Versal domain supplies (VCC_AIE, VCC_FPD, VCC_LPD, VCC_SOC, VCC_RAM, ...)
+    (re.compile(r'^VCC_.*$', re.I), None),
+    # Versal IO supplies (VCCIO_MIPI_507, VCCIO_USB2_504, ...)
+    (re.compile(r'^VCCIO_.*$', re.I), None),
     (re.compile(r'^VBATT$', re.I), 'VBATT'),
 ]
 
@@ -35,14 +47,29 @@ GROUND_PATTERNS = [
     re.compile(r'^GND_PS.*$', re.I),
     re.compile(r'^GND_SENSE$', re.I),
     re.compile(r'^GND_SMON$', re.I),
+    # Versal ground sense pins (GND_VCC_AIE_SENSE, GND_VCCINT_SENSE, ...)
+    re.compile(r'^GND_.*$', re.I),
 ]
 
+# Dedicated boot/configuration pin names (family-agnostic).
+# Optional PS_ prefix (Zynq), optional JTAG_ prefix, optional _bank suffix.
+# Deliberately narrow – does NOT match dual-purpose IOs whose name merely
+# *contains* a config keyword (e.g. IO_L3P_T0_DQS_PUDC_B_14 is regular IO).
+_CONFIG_NAMES = (
+    r"DONE|TCK|TMS|TDI|TDO|PROGRAM_B|PROG_B|INIT_B|CCLK|PUDC_B|POR_B|"
+    r"ERROR_OUT|ERROR_STATUS|SRST_B|"
+    r"REF_CLK|"
+    r"RTC_PADO|RTC_PADI|PADO|PADI|"
+    r"RTC|"
+    r"M[0-3]|MODE[0-9]|"
+    r"CFGBVS|EMCCLK|CSI_B|FCS_B|RDWR_FCS_B|POR_OVERRIDE"
+)
 CONFIG_PATTERNS = [
-    re.compile(r'^(DONE|TCK|TMS|TDI|TDO|PROGRAM_B|INIT_B|CCLK|M[0-2]|CFGBVS|PUDC_B|EMCCLK|CSI_B|RDWR_FCS_B|FCS_B)_?\d*$', re.I),
+    re.compile(rf"^(?:PS_)?(?:JTAG_)?(?:{_CONFIG_NAMES})(?:_\d+)?$", re.I),
 ]
 
 MGT_PATTERNS = [
-    re.compile(r'^(MGT|GTH|GTY|GTX|GTP|MGTH)', re.I),
+    re.compile(r'^(MGT|PS_MGT|GTH|GTY|GTX|GTP|MGTH)', re.I),
 ]
 
 ANALOG_PATTERNS = [
@@ -128,10 +155,10 @@ def _get_direction(pin_type: PinType, name: str) -> PinDirection:
         return PinDirection.NC
     if pin_type == PinType.CONFIG:
         upper = name.upper()
-        if upper.startswith(('TDO', 'DONE')):
+        # DONE, TDO, ERROR_OUT, ERROR_STATUS → OUTPUT
+        if re.search(r'(?:^|_)DONE', upper) or re.search(r'(?:^|_)TDO', upper) or re.search(r'ERROR_OUT|ERROR_STATUS', upper):
             return PinDirection.OUTPUT
-        if upper.startswith(('TCK', 'TMS', 'TDI', 'M0', 'M1', 'M2', 'CFGBVS', 'PUDC_B')):
-            return PinDirection.INPUT
+        # PROGRAM, INIT → BIDIR
         if 'PROGRAM' in upper or 'INIT' in upper:
             return PinDirection.BIDIR
         return PinDirection.INPUT

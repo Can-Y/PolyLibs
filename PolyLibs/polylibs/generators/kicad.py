@@ -5,115 +5,11 @@ Outputs modern KiCad s-expression ``.kicad_mod`` footprint files and
 required; the files can be imported directly into the symbol/footprint editor.
 """
 
-import re
 import uuid
 
-from ..classifier import partition_for_symbol
-from ..models import DevicePinout, PackageSpec, ClassifiedPin, PinDirection, SymbolSection
+from ..models import DevicePinout, PackageSpec, ClassifiedPin, PinDirection
 from .base import Generator
-
-
-_IO_DIFF_RE = re.compile(r'IO_L(\d+)([PN])_', re.I)
-_MGT_REFCLK_RE = re.compile(r'^MGTREFCLK(\d+)([NP])_(\d+)', re.I)
-_MGT_LANE_RE = re.compile(r'^MGT[RYHPTX]*(RX|TX)([NP])(\d+)_(\d+)', re.I)
-
-
-def _natural_key(s: str) -> tuple:
-    """Natural sort key: numbers compare numerically."""
-    return tuple(int(t) if t.isdigit() else t.lower() for t in re.split(r'(\d+)', s))
-
-
-def _io_sort_key(name: str) -> tuple:
-    """Sort key for IO bank pins: keep differential pairs together, P before N."""
-    m = _IO_DIFF_RE.search(name)
-    if m:
-        pair = int(m.group(1))
-        pol = 0 if m.group(2).upper() == 'P' else 1
-        return (0, pair, pol, _natural_key(name))
-    return (1, _natural_key(name), ())
-
-
-def _mgt_sort_key(name: str) -> tuple:
-    """Sort key for MGT pins: same channel and TX/RX differential pairs together."""
-    m = _MGT_REFCLK_RE.match(name)
-    if m:
-        bank = int(m.group(3))
-        clk = int(m.group(1))
-        pol = 0 if m.group(2).upper() == 'P' else 1
-        return (0, bank, 0, clk, pol, '')
-    m = _MGT_LANE_RE.match(name)
-    if m:
-        bank = int(m.group(4))
-        ch = int(m.group(3))
-        dir_order = 0 if m.group(1).upper() == 'RX' else 1
-        pol = 0 if m.group(2).upper() == 'P' else 1
-        return (0, bank, 1, ch, dir_order, pol, '')
-    return (1, _natural_key(name), '')
-
-
-def _general_sort_key(name: str) -> tuple:
-    """General sort key: group trailing P/N differential pairs, P before N."""
-    m = re.match(r'(.+?)[_\-]?([PN])$', name, re.I)
-    if m:
-        return (0, _natural_key(m.group(1)), 0 if m.group(2).upper() == 'P' else 1)
-    return (1, _natural_key(name), 0)
-
-
-def _io_group_key(name: str) -> tuple:
-    """Group key for IO bank pins: differential pairs share the same key."""
-    m = _IO_DIFF_RE.search(name)
-    if m:
-        return (0, int(m.group(1)))
-    return (1, _natural_key(name))
-
-
-def _mgt_group_key(name: str) -> tuple:
-    """Group key for MGT pins: same channel on the same side."""
-    m = _MGT_REFCLK_RE.match(name)
-    if m:
-        return (0, 0, int(m.group(1)))  # REFCLK groups come first
-    m = _MGT_LANE_RE.match(name)
-    if m:
-        return (0, 1, int(m.group(3)))
-    return (1, _natural_key(name))
-
-
-def _assign_sides(pins: list[ClassifiedPin], sec_name: str) -> tuple[list[ClassifiedPin], list[ClassifiedPin]]:
-    """Assign pins to the left side so pin numbers run top-to-bottom on one side.
-
-    Differential pairs / channels are still grouped together, but all groups are
-    placed on the left side of the symbol instead of alternating left/right.
-    """
-    if sec_name.startswith("MGT Bank"):
-        group_key = lambda cp: _mgt_group_key(cp.record.pin_name)
-    elif sec_name.startswith("Bank"):
-        group_key = lambda cp: _io_group_key(cp.record.pin_name)
-    else:
-        # For power, ground, config, etc. place each pin individually.
-        return (pins, [])
-
-    # Group pins, sort groups, then place all groups on the left side so pin
-    # numbers run top-to-bottom on a single side instead of alternating sides.
-    groups: dict[tuple, list[ClassifiedPin]] = {}
-    for cp in pins:
-        groups.setdefault(group_key(cp), []).append(cp)
-    sorted_group_keys = sorted(groups.keys())
-
-    left: list[ClassifiedPin] = []
-    for key in sorted_group_keys:
-        group = sorted(groups[key], key=lambda cp: _section_pin_sort_key_for_group(sec_name, cp))
-        left.extend(group)
-    return left, []
-
-
-def _section_pin_sort_key_for_group(sec_name: str, cp: ClassifiedPin) -> tuple:
-    """Sort key used inside a group (pairs already kept together by grouping)."""
-    name = cp.record.pin_name
-    if sec_name.startswith("MGT Bank"):
-        return _mgt_sort_key(name)
-    if sec_name.startswith("Bank"):
-        return _io_sort_key(name)
-    return _general_sort_key(name)
+from .symbol_sections import build_symbol_sections, assign_sides
 
 
 _KICAD_PIN_TYPE = {
@@ -140,70 +36,8 @@ class KiCadGenerator(Generator):
     ) -> dict[str, str]:
         part_name = device.full_name
         pkg_name = device.package_code.upper()
-        sections = partition_for_symbol(pins)
+        sections = build_symbol_sections(pins)
 
-        # Split MGT section by bank.  Keep each Power: {rail} section separate so
-        # that the same power rail is not split across units.  Merge all Ground
-        # pins into one section.
-        ground_pins: list[ClassifiedPin] = []
-        other_sections: list[SymbolSection] = []
-        for sec in sections:
-            if sec.name == "Ground":
-                ground_pins.extend(sec.pins)
-            elif sec.name == "MGT Transceivers":
-                bank_groups: dict[str, list[ClassifiedPin]] = {}
-                for cp in sec.pins:
-                    bank = cp.record.bank if cp.record.bank and cp.record.bank != "NA" else "?"
-                    bank_groups.setdefault(bank, []).append(cp)
-                for bank in sorted(bank_groups.keys(), key=lambda b: (not b.isdigit(), int(b) if b.isdigit() else b)):
-                    other_sections.append(
-                        SymbolSection(name=f"MGT Bank {bank}", side="top", pins=bank_groups[bank])
-                    )
-            else:
-                other_sections.append(sec)
-
-        if ground_pins:
-            other_sections.append(SymbolSection(name="Ground", side="bottom", pins=ground_pins))
-        sections = other_sections
-
-        # Sort sections so that related functional groups are grouped together.
-        def _sort_key(sec):
-            if sec.name == "Ground":
-                return (3, "")
-            if sec.name.startswith("Power"):
-                return (2, _natural_key(sec.name))
-            if sec.name in ("Configuration", "Analog / ADC", "No Connect") or sec.name.startswith("MGT"):
-                return (0, sec.name)
-            return (1, sec.name)
-
-        sections.sort(key=_sort_key)
-
-        # Split any section larger than 64 pins into multiple units.
-        MAX_PINS_PER_UNIT = 64
-
-        def _section_pin_sort_key(sec_name: str, cp: ClassifiedPin) -> tuple:
-            name = cp.record.pin_name
-            if sec_name.startswith("MGT Bank"):
-                return _mgt_sort_key(name) + (cp.record.ball_id,)
-            if sec_name.startswith("Power"):
-                return (cp.rail_name or "", _natural_key(name), cp.record.ball_id)
-            if sec_name == "Ground":
-                return _natural_key(name) + (cp.record.ball_id,)
-            if sec_name.startswith("Bank"):
-                return _io_sort_key(name) + (cp.record.ball_id,)
-            return _general_sort_key(name) + (cp.record.ball_id,)
-
-        expanded_sections: list[SymbolSection] = []
-        for sec in sections:
-            sorted_pins = sorted(sec.pins, key=lambda cp: _section_pin_sort_key(sec.name, cp))
-            if len(sorted_pins) <= MAX_PINS_PER_UNIT:
-                expanded_sections.append(SymbolSection(name=sec.name, side=sec.side, pins=sorted_pins))
-                continue
-            for idx, start in enumerate(range(0, len(sorted_pins), MAX_PINS_PER_UNIT)):
-                chunk = sorted_pins[start:start + MAX_PINS_PER_UNIT]
-                suffix = f"{sec.name}_{idx + 1}"
-                expanded_sections.append(SymbolSection(name=suffix, side=sec.side, pins=chunk))
-        sections = expanded_sections
 
         spacing = 2.54
         pin_len = 5.08  # doubled so pin numbers are not covered by the body
@@ -240,7 +74,7 @@ class KiCadGenerator(Generator):
 
             # Distribute pins to sides.  For IO/MGT keep pairs/channels on one side;
             # for other sections place all pins on the left side.
-            left_pins, right_pins = _assign_sides(sec_pins, sec.name)
+            left_pins, right_pins = assign_sides(sec_pins, sec.name)
             n_left = len(left_pins)
             n_right = len(right_pins)
 

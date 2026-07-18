@@ -287,3 +287,29 @@ python verify_footprint.py <封装>.kicad_mod <body_x> <body_y>
 - 非 BGA 编号（QFN/QFP 纯数字引脚暂不支持）
 
 真遇到这类封装时需要扩展 pkg_db schema（如增加 offset 字段），届时再实现。
+
+### 3.5 Cadence 输出使用说明（SPB 17.2）
+
+生成 Cadence 格式后，输出目录的 `cadence/` 下有：
+
+- `<PACKAGE>.il` — Allegro 封装构建脚本
+- `<DEVICE>_library.xml` — OrCAD Capture 符号库
+
+**Allegro 封装（.dra）：**
+
+1. 打开 Allegro PCB Editor，`File > New > Package Symbol`，名称任意，进入编辑界面
+2. 在下方 SKILL 命令行输入：`skill load("<完整路径>/<PACKAGE>.il")`
+3. 脚本自动创建 padstack、全部焊盘、外形框与 A1 标记；`File > Save` 得 `.dra`
+4. 若提示 padstack 已存在的 WARN，属正常（复用已有盘）
+
+**OrCAD 符号（.olb）：**
+
+1. 打开 Capture，`File > Import > Library XML`，选择 `<DEVICE>_library.xml`
+2. 导入后得到 `.olb`，打开核对引脚数量与名称
+
+适用版本：Cadence SPB 17.2（`D:\Cadence\SPB_17.2`）。
+
+注意：请使用 Capture **交互界面**的 `File > Import > Library XML` 导入
+（实测 494 引脚可正常导入）。不要用 `Capture.exe <script.tcl>` 无头方式
+驱动——该路径回退 Lite 模式，单器件超过 100 引脚会被拒绝
+（`ORDBDLL-1233`）。

@@ -1,6 +1,6 @@
 # PolyLibs 使用说明
 
-PolyLibs 是一个 Xilinx FPGA 原理图符号与 PCB 封装生成工具，输出 KiCad 格式。
+PolyLibs 是一个 Xilinx FPGA 原理图符号与 PCB 封装生成工具，输出 KiCad / Cadence 格式。
 
 ## 内置器件系列
 
@@ -127,6 +127,11 @@ data_dirs:
 }
 ```
 
+注意：`body_size_x` / `body_size_y` 必须按数据手册方向填写（球号数字方向为 x）。
+长方形（非对称）封装必须提供精确条目——缺失时会退化为启发式估值，
+pitch 按封装前缀猜、本体只猜正方形，长方形封装靠猜必然出错
+（原理详见第 5 节）。
+
 或使用脚本从已有数据推断：
 
 ```bash
@@ -231,3 +236,80 @@ polylibs.bat
 ```
 
 然后将命令行内容复制到 bug 报告中。
+
+---
+
+## 5. 设计原理：焊盘坐标与缺省焊盘
+
+### 5.1 坐标来自球号解码，不做几何推测
+
+每个焊盘的物理坐标由其球号（ball ID）直接解码：
+
+- 数字部分 = 列（X 方向），字母部分 = 行（Y 方向）
+- 行字母按跳过 I、O、Q、S、X、Z 的 20 进制计数（A..Y，然后 AA、AB…）
+- 以阵列中心为原点：`x = (col - col_center) x pitch`，`y = (row_center - row) x pitch`
+
+例如 UVBA494：29 列 x 18 行、0.5mm pitch，焊盘跨度 X 14.0mm、Y 8.5mm。
+
+### 5.2 缺省焊盘（depopulation）由 CSV 承载
+
+生成器只为 pinout CSV 中出现的球号放置焊盘；CSV 中没有的阵列位置自然留空。
+不推测、不插值——缺省信息完全来自原始数据。
+
+`data/pkg_db.json` 只提供几何参数（pitch、本体尺寸、焊盘/阻焊/钢网直径），
+不包含阵列规模或缺省焊盘表。
+
+例：UVBA494 阵列 522 个位置、494 个焊盘，缺的 28 个集中在第 5、25 两列，
+与实物封装的 depopulation 一致。
+
+### 5.3 长方形/非对称封装的输入要求
+
+新增此类型号时，现有输入即可满足，但必须遵守：
+
+1. pinout CSV 完整（球号决定坐标与缺省位置）
+2. `data/pkg_db.json` 必须包含该封装代码的**精确**条目，且
+   `body_size_x` / `body_size_y` 按数据手册方向填写（球号数字方向为 x）。
+   缺失时退化为启发式估值，长方形封装靠猜必然出错
+3. 生成后验证：
+
+```bash
+python verify_footprint.py <封装>.kicad_mod <body_x> <body_y>
+```
+
+   焊盘跨度应 <= 本体尺寸，且四边留白大致对称。
+
+### 5.4 目前表达不了的边界情况
+
+- 焊盘阵列中心相对本体中心有偏移（如最外圈整行/整列缺省时，
+  按现有焊盘推断的中心会偏半个 pitch，本体丝印框随之错位）
+- X/Y 方向不等 pitch（schema 仅支持单一 `pitch_mm`）
+- 非矩形本体（开槽、切角、裸焊盘 EPAD 等）
+- 非 BGA 编号（QFN/QFP 纯数字引脚暂不支持）
+
+真遇到这类封装时需要扩展 pkg_db schema（如增加 offset 字段），届时再实现。
+
+### 3.5 Cadence 输出使用说明（SPB 17.2）
+
+生成 Cadence 格式后，输出目录的 `cadence/` 下有：
+
+- `<PACKAGE>.il` — Allegro 封装构建脚本
+- `<DEVICE>_library.xml` — OrCAD Capture 符号库
+
+**Allegro 封装（.dra）：**
+
+1. 打开 Allegro PCB Editor，`File > New > Package Symbol`，名称任意，进入编辑界面
+2. 在下方 SKILL 命令行输入：`skill load("<完整路径>/<PACKAGE>.il")`
+3. 脚本自动创建 padstack、全部焊盘、外形框与 A1 标记；`File > Save` 得 `.dra`
+4. 若提示 padstack 已存在的 WARN，属正常（复用已有盘）
+
+**OrCAD 符号（.olb）：**
+
+1. 打开 Capture，`File > Import > Library XML`，选择 `<DEVICE>_library.xml`
+2. 导入后得到 `.olb`，打开核对引脚数量与名称
+
+适用版本：Cadence SPB 17.2（`D:\Cadence\SPB_17.2`）。
+
+注意：请使用 Capture **交互界面**的 `File > Import > Library XML` 导入
+（实测 494 引脚可正常导入）。不要用 `Capture.exe <script.tcl>` 无头方式
+驱动——该路径回退 Lite 模式，单器件超过 100 引脚会被拒绝
+（`ORDBDLL-1233`）。
